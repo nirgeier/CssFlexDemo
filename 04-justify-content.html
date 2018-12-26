@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>04-justify-content.html</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style id="demoStyle">
+
+    .sample1 { justify-content: flex-start}
+    .sample2 { justify-content: flex-end} 
+    .sample3 { justify-content: center;}
+    .sample4 { justify-content: space-between; }
+    .sample5 { justify-content: space-around; }
+
+</style>
+
+<body>
+    <div class="wrapper">
+        <nav></nav>
+        <div class="content">
+
+            <fieldset>
+                <legend>[flex container] Main Axis [flex-justify-content]</legend>
+                <input type="radio" name="flex" onclick="setStyle('sample1')" checked><span>Default: flex-start</span><br />
+                <input type="radio" name="flex" onclick="setStyle('sample2')"><span>flex-end</span>
+                <input type="radio" name="flex" onclick="setStyle('sample3')"><span>center</span>
+                <input type="radio" name="flex" onclick="setStyle('sample4')"><span>space-between</span>
+                <input type="radio" name="flex" onclick="setStyle('sample5')"><span>space-around</span>
+            </fieldset>
+
+
+            <div class="code-sample"></div>
+            <div class="container ">
+                <div class="flex-item one">One</div>
+                <div class="flex-item two">Two</div>
+                <div class="flex-item three">Three</div>
+                <div class="flex-item four">Four</div>
+            </div>
+        </div>
+    </div>
+    <script src="utils.js"></script>
+</body>
+
+</html>

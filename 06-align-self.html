@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>06-align-self.html</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style id="demoStyle">
+    .container {
+        padding: 20px;
+        border: 2px solid gray;
+        display: flex;
+        height: 250px;
+    }
+
+    .flex-start {
+        align-self: flex-start;
+    }
+
+    .flex-end {
+        align-self: flex-end;
+    }
+
+    .center {
+        align-self: center;
+    }
+
+    .baseline {
+        align-self: baseline;
+    }
+
+    .stretch {
+        align-self: stretch;
+    }
+
+    .flex-item {
+        padding: 5px;
+        margin: 5px;
+        line-height: 100px;
+        color: white;
+        font-size: 1.25em;
+        text-align: center;
+        font-family: "Consolas", "Arial";
+        white-space: nowrap;
+        flex: 1;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <nav></nav>
+        <div class="content">
+
+            <h1>[flex item] align-self</h1>
+            <div class="code-sample">
+                <p>
+                    &lt;div style="align-self: <b>flex-start</b>"&gt;flex-start&lt;/div&gt;<br />
+                    &lt;div style="align-self: <b>flex-end</b>"&gt;flex-end&lt;/div&gt;<br />
+                    &lt;div style="align-self: <b>center</b>"&gt;center&lt;/div&gt;<br />
+                    &lt;div style="align-self: <b>baseline</b>"&gt;baseline&lt;/div&gt;<br />
+                    &lt;div style="align-self: <b>stretch</b>"&gt;stretch&lt;/div&gt;<br />
+                </p>
+            </div>
+            <div class="container">
+                <div class="flex-item one flex-start">flex-start</div>
+                <div class="flex-item two flex-end">flex-end</div>
+                <div class="flex-item three center">center</div>
+                <div class="flex-item four baseline">baseline</div>
+                <div class="flex-item five stretch">stretch</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="utils.js"></script>
+
+</html>

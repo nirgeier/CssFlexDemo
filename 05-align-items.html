@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>05-align-items.html</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style id="demoStyle">
+    .sample1 { align-items: flex-start}
+    .sample2 { align-items: flex-end} 
+    .sample3 { align-items: center;}
+    .sample4 { align-items: baseline; }
+    .sample5 { align-items: stretch; }
+
+    .three{ height:300px; }
+    .two{ height:200px; }
+    .flex-item{ flex-basis: 20%}
+</style>
+
+<body>
+    <div class="wrapper">
+        <nav></nav>
+        <div class="content">
+            <fieldset>
+                <legend>[flex container] align-items</legend>
+                <input type="radio" name="flex" onclick="setStyle('sample1')" checked><span>flex-start</span>
+                <input type="radio" name="flex" onclick="setStyle('sample2')"><span>flex-end</span>
+                <input type="radio" name="flex" onclick="setStyle('sample3')"><span>center</span>
+                <input type="radio" name="flex" onclick="setStyle('sample4')"><span>baseline</span>
+                <input type="radio" name="flex" onclick="setStyle('sample5')"><span>stretch</span>
+            </fieldset>
+            <div class="code-sample"></div>
+            <div class="container">
+                <div class="flex-item one flex-start">1</div>
+                <div class="flex-item two flex-end">2</div>
+                <div class="flex-item three center">3</div>
+                <div class="flex-item four baseline">4</div>
+                <div class="flex-item five stretch">5</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="utils.js"></script>
+
+</html>
