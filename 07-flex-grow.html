@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>07-flex-grow.html</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav></nav>
+        <div class="content">
+            <h1>[flex item] flex-grow</h1>
+            <div class="code-sample">
+                <p>
+                    &lt;div style="flex-grow: <b>1</b>"&gt;1&lt;/div&gt;<br />
+                    &lt;div style="flex-grow: <b>1</b>"&gt;2&lt;/div&gt;<br />
+                    &lt;div style="flex-grow: <b>1</b>"&gt;3&lt;/div&gt;<br />
+                    &lt;div style="flex-grow: <b>3</b>"&gt;4&lt;/div&gt;<br />
+                    &lt;div style="flex-grow: <b>3</b>"&gt;5&lt;/div&gt;<br />
+                </p>
+                <br />
+                <p>
+                    1+2+3 = <b>3</b> in size,<br />
+                    4+5 = <b>3</b> as well<br />
+                </p>
+            </div>
+            <div class="container">
+                <div class="flex-item one" style="flex-grow: 1">1</div>
+                <div class="flex-item two" style="flex-grow: 1">2</div>
+                <div class="flex-item three" style="flex-grow: 1">3</div>
+                <div class="flex-item four" style="flex-grow: 3">4</div>
+                <div class="flex-item five" style="flex-grow: 3">5</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="utils.js"></script>
+
+</html>

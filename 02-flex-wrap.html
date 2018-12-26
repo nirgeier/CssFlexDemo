@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>02-flex-wrap.html</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style id="demoStyle">
+
+    .sample1 { display: block;}
+    .sample2 { flex-wrap: nowrap;} 
+    .sample3 { flex-wrap: wrap;}
+    .sample4 { flex-wrap: wrap-reverse; flex-direction: row;}
+    .sample3 .flex-item, .sample4 .flex-item{width:175px;}
+    
+</style>
+
+<body>
+    <div class="wrapper">
+        <nav></nav>
+        <div class="content">
+            <fieldset>
+                <legend>[flex container] Change view [flex-wrap]</legend>
+                <input type="radio" name="flex" onclick="setStyle('sample1')" checked><span>No Flex</span>
+                <input type="radio" name="flex" onclick="setStyle('sample2')"><span>nowrap</span>
+                <input type="radio" name="flex" onclick="setStyle('sample3')"><span>wrap</span>
+                <input type="radio" name="flex" onclick="setStyle('sample4')"><span>wrap - reverse</span>
+            </fieldset>
+
+
+            <div class="code-sample"></div>
+            <div class="container ">
+                <div class="flex-item one">One</div>
+                <div class="flex-item two">Two</div>
+                <div class="flex-item three">Three</div>
+                <div class="flex-item four">Four</div>
+                <div class="flex-item one">Five</div>
+                <div class="flex-item two">Six</div>
+                <div class="flex-item three">Seven</div>
+                <div class="flex-item four">Eight</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="utils.js"></script>
+
+</body>
+
+</html>
